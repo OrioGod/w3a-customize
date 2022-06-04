@@ -8,4 +8,7 @@ ADD ./w3a-customize/bootstrap.sh /w3a-customize/bootstrap.sh
 
 MAINTAINER Kyrie
 
+RUN chmod 755 /w3a-customize/bootstrap.sh
+WORKDIR /w3a-customize
+
 CMD ["./bootstrap.sh"]
